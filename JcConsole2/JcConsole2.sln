@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29926.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JcConsole2", "JcConsole2\JcConsole2.csproj", "{B80A596A-3F43-405F-BD43-9519596CFEBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dal", "Dal\Dal.csproj", "{E15907BE-22E4-40A8-BC68-6AF5F3B4DF28}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B80A596A-3F43-405F-BD43-9519596CFEBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B80A596A-3F43-405F-BD43-9519596CFEBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B80A596A-3F43-405F-BD43-9519596CFEBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B80A596A-3F43-405F-BD43-9519596CFEBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E15907BE-22E4-40A8-BC68-6AF5F3B4DF28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E15907BE-22E4-40A8-BC68-6AF5F3B4DF28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E15907BE-22E4-40A8-BC68-6AF5F3B4DF28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E15907BE-22E4-40A8-BC68-6AF5F3B4DF28}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F9B4C92A-6188-4736-88F0-BE0E11E60AC7}
+	EndGlobalSection
+EndGlobal

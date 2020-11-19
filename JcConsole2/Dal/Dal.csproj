@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E15907BE-22E4-40A8-BC68-6AF5F3B4DF28}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dal</RootNamespace>
+    <AssemblyName>Dal</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CM\ApiAccount.cs" />
+    <Compile Include="CM\ApiDeliveryTemplateR.cs" />
+    <Compile Include="CM\ApiItem.cs" />
+    <Compile Include="CM\ApiItemCats.cs" />
+    <Compile Include="CM\ApiItemCatsIndustryInfo.cs" />
+    <Compile Include="CM\ApiItemChange.cs" />
+    <Compile Include="CM\ApiItemCostRanges.cs" />
+    <Compile Include="CM\ApiItemSkuCostRanges.cs" />
+    <Compile Include="CM\ApiLogisticsCompany.cs" />
+    <Compile Include="CM\ApiOrders2.cs" />
+    <Compile Include="CM\ApiRefund.cs" />
+    <Compile Include="CM\ApiSellerCats.cs" />
+    <Compile Include="CM\ApiSkus.cs" />
+    <Compile Include="CM\ApiTasks.cs" />
+    <Compile Include="CM\ApiTopFeeRs.cs" />
+    <Compile Include="CM\ApiTradeFlags.cs" />
+    <Compile Include="CM\ApiTrades2.cs" />
+    <Compile Include="CM\CostBreakdown.cs" />
+    <Compile Include="CM\CostData.cs" />
+    <Compile Include="CM\C__MigrationHistory.cs" />
+    <Compile Include="CM\DbCM.cs" />
+    <Compile Include="CM\EventTrace.cs" />
+    <Compile Include="CM\FactItem.cs" />
+    <Compile Include="CM\FactItemFrom.cs" />
+    <Compile Include="CM\FactItemFromHistory.cs" />
+    <Compile Include="CM\FactItemHistory.cs" />
+    <Compile Include="CM\FactVistor.cs" />
+    <Compile Include="CM\HostItemConfig.cs" />
+    <Compile Include="CM\ItemConfiguration.cs" />
+    <Compile Include="CM\ItemConversionRate.cs" />
+    <Compile Include="CM\ItemIndustryInfo.cs" />
+    <Compile Include="CM\ItemIndustryWordsHistory.cs" />
+    <Compile Include="CM\ItemZtcDateInfo.cs" />
+    <Compile Include="CM\ItemZtcInfoDetail.cs" />
+    <Compile Include="CM\ItemZtcInputInfo.cs" />
+    <Compile Include="CM\JZData.cs" />
+    <Compile Include="CM\JZData2.cs" />
+    <Compile Include="CM\JZItem.cs" />
+    <Compile Include="CM\JzItemChange.cs" />
+    <Compile Include="CM\JZLostData.cs" />
+    <Compile Include="CM\JZLostDetail.cs" />
+    <Compile Include="CM\KeyAnalysis_Exclude.cs" />
+    <Compile Include="CM\KeyWord_Marker1.cs" />
+    <Compile Include="CM\LL_LiuLiangFromDetail.cs" />
+    <Compile Include="CM\LL_LiuLiangFromMobile.cs" />
+    <Compile Include="CM\LL_LiuLiangPc.cs" />
+    <Compile Include="CM\NewItemPlan.cs" />
+    <Compile Include="CM\Pdd_DayReport.cs" />
+    <Compile Include="CM\PlanChannelConfig.cs" />
+    <Compile Include="CM\PM_HISTORY.cs" />
+    <Compile Include="CM\ProductLanding.cs" />
+    <Compile Include="CM\ShopSort.cs" />
+    <Compile Include="CM\ShopSortPlan.cs" />
+    <Compile Include="CM\simba_day.cs" />
+    <Compile Include="CM\SPShopConfig.cs" />
+    <Compile Include="CM\STFeedDetail.cs" />
+    <Compile Include="CM\SubWayClick.cs" />
+    <Compile Include="CM\SuPThesaurus.cs" />
+    <Compile Include="CM\SuRecommend.cs" />
+    <Compile Include="CM\SYCM_BKSSNew.cs" />
+    <Compile Include="CM\SYCM_SCPHPinPai.cs" />
+    <Compile Include="CM\SYCM_ShiChangDaPan.cs" />
+    <Compile Include="CM\SYCM_ShiChangPaiHang.cs" />
+    <Compile Include="CM\SYCM_SSKeyword.cs" />
+    <Compile Include="CM\SYCM_SSQuDao.cs" />
+    <Compile Include="CM\TacticsWeekConfig.cs" />
+    <Compile Include="CM\TaskInfoes.cs" />
+    <Compile Include="CM\TaskKinds.cs" />
+    <Compile Include="CM\TB_SCDPMonthdata.cs" />
+    <Compile Include="CM\TB_TaobaoAim.cs" />
+    <Compile Include="CM\TB_TaobaoAllCartCollect.cs" />
+    <Compile Include="CM\TB_TaobaoAllFromMobile.cs" />
+    <Compile Include="CM\TB_TaobaoAllFromPc.cs" />
+    <Compile Include="CM\TB_TaobaoAllHome.cs" />
+    <Compile Include="CM\TB_TaobaoAllPenFen.cs" />
+    <Compile Include="CM\TB_TaobaoAllTopMobile.cs" />
+    <Compile Include="CM\TB_TaobaoAllTopPc.cs" />
+    <Compile Include="CM\TB_TaobaoAllWW.cs" />
+    <Compile Include="CM\TB_TaobaoAllZx.cs" />
+    <Compile Include="CM\TB_TaobaoCost.cs" />
+    <Compile Include="CM\TB_TaoBaoCustomizeCategory.cs" />
+    <Compile Include="CM\TB_TaobaoDayInfo.cs" />
+    <Compile Include="CM\TB_TaobaoDaySellInfo.cs" />
+    <Compile Include="CM\TB_TaobaoDaySellInfoMobile.cs" />
+    <Compile Include="CM\TB_TaobaoDDS.cs" />
+    <Compile Include="CM\TB_TaobaoItem.cs" />
+    <Compile Include="CM\TB_TaobaoItemAd.cs" />
+    <Compile Include="CM\TB_TaobaoItemAim.cs" />
+    <Compile Include="CM\TB_TaobaoItemDiamondShow.cs" />
+    <Compile Include="CM\TB_TaobaoItemExt.cs" />
+    <Compile Include="CM\TB_TaobaoItemInfoMobile.cs" />
+    <Compile Include="CM\TB_TaobaoItemMarketing.cs" />
+    <Compile Include="CM\TB_TaobaoItemPicModify.cs" />
+    <Compile Include="CM\TB_TaobaoItemSeo.cs" />
+    <Compile Include="CM\TB_TaobaoItemStrategy.cs" />
+    <Compile Include="CM\TB_TaobaoItemTag.cs" />
+    <Compile Include="CM\TB_TaobaoItemTagType.cs" />
+    <Compile Include="CM\TB_TaobaoItemVCus.cs" />
+    <Compile Include="CM\TB_TaobaoItemVCusOther.cs" />
+    <Compile Include="CM\TB_TaobaoItemWeekDetail.cs" />
+    <Compile Include="CM\TB_TaobaoItemWeekPlan.cs" />
+    <Compile Include="CM\TB_TaobaoItemWeekTask.cs" />
+    <Compile Include="CM\TB_TaobaoLzDayInfo.cs" />
+    <Compile Include="CM\TB_TaobaoLzDayInfoMobile.cs" />
+    <Compile Include="CM\TB_TaobaoMonthCost.cs" />
+    <Compile Include="CM\TB_TaobaoShop.cs" />
+    <Compile Include="CM\TB_TaobaoShua.cs" />
+    <Compile Include="CM\TB_TaobaoShuaAll.cs" />
+    <Compile Include="CM\TB_TaobaoSimba3Days.cs" />
+    <Compile Include="CM\TB_TaobaoSimbaFull.cs" />
+    <Compile Include="CM\TB_TaobaoSimbaToday.cs" />
+    <Compile Include="CM\TB_TaobaoStrategy.cs" />
+    <Compile Include="CM\TB_ZTCTool.cs" />
+    <Compile Include="CM\TestModel1.cs" />
+    <Compile Include="CM\UserItemRole.cs" />
+    <Compile Include="CM\UserShopRole.cs" />
+    <Compile Include="CM\UserWebRole.cs" />
+    <Compile Include="CM\YSF_auction_app_query_effect_new_d.cs" />
+    <Compile Include="CM\YSF_auction_comment_d.cs" />
+    <Compile Include="CM\YSF_auction_pc_search_src_effect_new_d.cs" />
+    <Compile Include="CM\YSF_auction_pc_src_effect_d.cs" />
+    <Compile Include="CM\YSF_auction_platform_trade_d.cs" />
+    <Compile Include="CM\YSF_auction_query_effect_d.cs" />
+    <Compile Include="CM\YSF_auction_trade_src_d.cs" />
+    <Compile Include="CM\YSF_dim_pc_src_new_d.cs" />
+    <Compile Include="CM\YSF_dim_wireless_src_new_d.cs" />
+    <Compile Include="CM\YSF_item_3.cs" />
+    <Compile Include="CM\YSF_item_app_src_platform_new_d.cs" />
+    <Compile Include="CM\YSF_item_search_effect_new_d.cs" />
+    <Compile Include="CM\YSF_item_source_last_effect_new_d.cs" />
+    <Compile Include="CM\YSF_new_shop_weblog_d.cs" />
+    <Compile Include="CM\YSF_new_shop_wireless_log_d_all.cs" />
+    <Compile Include="CM\YSF_pc_search_src_effect_d.cs" />
+    <Compile Include="CM\YSF_platform_source_traffic_d.cs" />
+    <Compile Include="CM\YSF_shop_1.cs" />
+    <Compile Include="CM\YSF_shop_2.cs" />
+    <Compile Include="CM\YSF_shop_src_last_effect_d.cs" />
+    <Compile Include="CM\YSF_shop_wireless_platform_src_new_d.cs" />
+    <Compile Include="CM\YSF_sku_trade_d.cs" />
+    <Compile Include="CM\YY_Type.cs" />
+    <Compile Include="CM\ZWCateTagTypeInfo.cs" />
+    <Compile Include="CM\ZWShopPlan.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
