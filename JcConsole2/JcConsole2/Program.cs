@@ -16,9 +16,6 @@ namespace JcConsole2
 
         static void Main(string[] args)
         {
-
-
-
             var as1 = db.TestModel1.Where(u => string.IsNullOrEmpty(u.Name)).ToList();
             Stopwatch sw = new Stopwatch();
             //开始测量代码运行时间
