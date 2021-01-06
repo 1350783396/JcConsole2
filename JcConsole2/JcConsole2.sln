@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JcConsole2", "JcConsole2\Jc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dal", "Dal\Dal.csproj", "{E15907BE-22E4-40A8-BC68-6AF5F3B4DF28}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JCCore", "JCCore\JCCore.csproj", "{2606E371-28A6-4DC2-80A3-8C8664DE2BF7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{E15907BE-22E4-40A8-BC68-6AF5F3B4DF28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E15907BE-22E4-40A8-BC68-6AF5F3B4DF28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E15907BE-22E4-40A8-BC68-6AF5F3B4DF28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2606E371-28A6-4DC2-80A3-8C8664DE2BF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2606E371-28A6-4DC2-80A3-8C8664DE2BF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2606E371-28A6-4DC2-80A3-8C8664DE2BF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2606E371-28A6-4DC2-80A3-8C8664DE2BF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
